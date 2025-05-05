@@ -1,0 +1,233 @@
+.buy-greece-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.buy-greece-hero {
+  height: 70vh;
+  background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.buy-greece-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.buy-greece-content {
+  position: relative;
+  z-index: 1;
+}
+
+.buy-greece-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.buy-greece-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.buy-greece-main {
+  max-width: 1200px;
+  margin: -50px auto 0;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.process-section {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.process-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.process-step {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.step-number {
+  background: #2c3e50;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.step-content p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.step-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.info-card h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.cta-section {
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+
+.cta-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.cta-button:hover {
+  background: #1a252f;
+  transform: translateY(-2px);
+}
+
+.cta-image {
+  flex: 1;
+  min-height: 400px;
+}
+
+.cta-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .process-step {
+    flex-direction: column;
+  }
+
+  .step-number {
+    margin-bottom: 20px;
+  }
+
+  .cta-section {
+    flex-direction: column;
+  }
+
+  .cta-image {
+    min-height: 300px;
+  }
+
+  .buy-greece-content h1 {
+    font-size: 2.5rem;
+  }
+} 

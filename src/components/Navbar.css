@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+  --blue-dark: #284277;
+  --blue: #006bbd;
+  --blue-light: #81c8ee;
+  --offwhite: #ede8e4;
+  --beige: #c1afa8;
+  --gold: #D4AF37;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo.scrolled {
+  color: var(--blue-dark);
+}
+
+.navbar-logo:hover {
+  color: var(--gold);
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after,
+.navbar-link.active::after {
+  width: 100%;
+}
+
+.navbar-link.active {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.navbar-link.scrolled {
+  color: var(--blue-dark);
+}
+
+.navbar-link.scrolled:hover {
+  color: var(--blue);
+}
+
+.navbar-link.scrolled.active {
+  color: var(--blue);
+}
+
+.login-button {
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  color: white;
+  border: 2px solid var(--gold);
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.login-button:hover {
+  background: var(--gold);
+  color: var(--blue-dark);
+  transform: translateY(-2px);
+}
+
+.login-button.scrolled {
+  color: var(--blue-dark);
+  border-color: var(--blue-dark);
+}
+
+.login-button.scrolled:hover {
+  background: var(--blue-dark);
+  color: white;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggle.scrolled span {
+  background: var(--blue-dark);
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-link {
+    color: var(--blue-dark);
+  }
+
+  .navbar-link.active {
+    color: var(--blue);
+  }
+
+  .login-button {
+    margin-left: 0;
+    width: 100%;
+    color: var(--blue-dark);
+    border-color: var(--blue-dark);
+  }
+
+  .login-button:hover {
+    background: var(--blue-dark);
+    color: white;
+  }
+} 
