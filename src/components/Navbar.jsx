@@ -40,9 +40,11 @@ const Navbar = () => {
           <a href="/contact-us" className={`navbar-link ${isActive('/contact-us') ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`}>
             Contact Us
           </a>
+          {/*
           <button onClick={() => navigate('/login')} className={`login-button ${isScrolled ? 'scrolled' : ''}`}>
             Login
           </button>
+          */}
         </div>
 
         <button 
