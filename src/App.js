@@ -7,6 +7,8 @@ import BuyGreece from './components/BuyGreece';
 import ContactUs from './components/ContactUs';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+import FAQ from './components/FAQ';
+import TermsAndConditions from './components/TermsAndConditions';
 import './App.css';
 
 function AppContent() {
@@ -23,6 +25,8 @@ function AppContent() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/terms" element={<TermsAndConditions />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,134 @@
+.faq-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.faq-hero {
+  position: relative;
+  height: 300px;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.faq-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(40, 66, 119, 0.7);
+}
+
+.faq-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.faq-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.faq-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem 2rem;
+
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.faq-item {
+  background: #ede8e4;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #81c8ee22;
+  cursor: pointer;
+  transition: box-shadow 0.18s, background 0.18s;
+  padding: 0.2rem 1.2rem;
+  border-left: 5px solid #81c8ee;
+  position: relative;
+}
+
+.faq-item.open {
+  box-shadow: 0 4px 24px #D4AF3733;
+  background: #fffbe6;
+  border-left: 5px solid #D4AF37;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.13rem;
+  font-weight: 600;
+  color: #284277;
+  padding: 1.1rem 0;
+  user-select: none;
+}
+
+.faq-arrow {
+  font-size: 1.2rem;
+  color: #81c8ee;
+  transition: transform 0.22s, color 0.18s;
+}
+
+.faq-arrow.open {
+  transform: rotate(180deg);
+  color: #D4AF37;
+}
+
+.faq-answer-wrapper {
+  overflow: hidden;
+  transition: max-height 0.33s cubic-bezier(0.4, 0.2, 0.2, 1), opacity 0.33s;
+  max-height: 0;
+  opacity: 0;
+}
+
+.faq-item.open .faq-answer-wrapper {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.faq-answer {
+  color: #284277;
+  font-size: 1.05rem;
+  padding-bottom: 1.1rem;
+  padding-right: 1.5rem;
+  padding-left: 0.2rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .faq-hero {
+    height: 250px;
+  }
+
+  .faq-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .faq-content p {
+    font-size: 1.1rem;
+  }
+
+  .faq-section {
+    padding: 0 1rem 3rem 1rem;
+  }
+} 

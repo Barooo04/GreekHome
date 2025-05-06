@@ -50,6 +50,14 @@
   color: var(--gold);
 }
 
+.navbar-logo-placeholder {
+  width: 120px;
+  height: 38px;
+  background: #bdbdbd;
+  border-radius: 8px;
+  display: block;
+}
+
 .navbar-menu {
   display: flex;
   gap: 2rem;

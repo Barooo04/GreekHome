@@ -1,0 +1,118 @@
+.terms-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.terms-hero {
+  height: 70vh;
+  min-height: 340px;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.terms-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(40, 66, 119, 0.7);
+}
+
+.terms-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.terms-container {
+  background: #f8f9fa;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem 1rem 4rem 1rem;
+}
+
+.terms-content {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #81c8ee22;
+  max-width: 700px;
+  width: 100%;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+}
+
+.terms-content h1 {
+  display: none;
+}
+
+.terms-content h2 {
+  color: #006bbd;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.terms-content p {
+  color: #284277;
+  font-size: 1.08rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.7;
+}
+
+.terms-content ul {
+  margin: 0.5rem 0 1.1rem 1.5rem;
+  color: #284277;
+  font-size: 1.08rem;
+}
+
+.terms-content li {
+  margin-bottom: 0.4rem;
+}
+
+.terms-content a {
+  color: #006bbd;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.terms-content a:hover {
+  color: #284277;
+}
+
+@media (max-width: 600px) {
+  .terms-hero {
+    height: 38vh;
+    min-height: 160px;
+  }
+  .terms-hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .terms-content {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    border-radius: 10px;
+  }
+  .terms-content h2 {
+    font-size: 1.05rem;
+  }
+} 

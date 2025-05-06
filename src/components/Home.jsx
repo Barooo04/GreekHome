@@ -18,7 +18,7 @@ const Home = () => {
         <div className="about-text">
           <h2>Find Your Slice of Greek Paradise</h2>
           <p>
-            At GreekHome, we are passionate about helping you realize your dream of living in Greece. With years of experience and a deep love for the country, our team personally selects the most authentic and valuable properties, guiding you step by step with transparency and care. Discover who we are and why so many people trust us to start their new life in Greece.
+            At My Cheap Greek Home, we are passionate about helping you realize your dream of living in Greece. With years of experience and a deep love for the country, our team personally selects the most authentic and valuable properties, guiding you step by step with transparency and care. Discover who we are and why so many people trust us to start their new life in Greece.
           </p>
           <a href="/about" className="about-link-button">Learn more about us</a>
         </div>
@@ -68,7 +68,7 @@ const Home = () => {
         <div className="howwework-text">
           <h2>How We Work</h2>
           <p>
-            At GreekHome, we believe in a personal and transparent approach. We carefully select each property, collaborate only with trusted local agents, and provide you with honest, unbiased advice. Our process is tailored to your needs: from the first contact to the final signature, we are by your side, making your Greek property journey smooth, safe, and enjoyable.
+            At My Cheap Greek Home, we believe in a personal and transparent approach. We carefully select each property, collaborate only with trusted local agents, and provide you with honest, unbiased advice. Our process is tailored to your needs: from the first contact to the final signature, we are by your side, making your Greek property journey smooth, safe, and enjoyable.
           </p>
         </div>
       </section>
@@ -78,7 +78,7 @@ const Home = () => {
         <div className="reviews-cards">
           <div className="review-card decorated">
             <div className="review-decor decor-azur"></div>
-            <div className="review-text">“GreekHome made my dream of living in Greece possible! The weekly updates and personal advice were invaluable. Highly recommended!”</div>
+            <div className="review-text">"My Cheap Greek Home made my dream of living in Greece possible! The weekly updates and personal advice were invaluable. Highly recommended!"</div>
             <div className="review-author">
               <span className="review-flag">🇺🇸</span>
               <span className="review-name">Susan Murphy</span>
@@ -87,7 +87,7 @@ const Home = () => {
           </div>
           <div className="review-card decorated">
             <div className="review-decor decor-azur"></div>
-            <div className="review-text">“I live for Thursdays thanks to this fabulous newsletter. It feeds our plan to move to Greece while educating us at the same time.”</div>
+            <div className="review-text">"I live for Thursdays thanks to this fabulous newsletter. It feeds our plan to move to Greece while educating us at the same time."</div>
             <div className="review-author">
               <span className="review-flag">🇬🇧</span>
               <span className="review-name">Deborah Seidner</span>
@@ -96,7 +96,7 @@ const Home = () => {
           </div>
           <div className="review-card decorated">
             <div className="review-decor decor-azur"></div>
-            <div className="review-text">“This week's newsletter is amazing! Love it... I want them all! The best resource for Greek properties.”</div>
+            <div className="review-text">"This week's newsletter is amazing! Love it... I want them all! The best resource for Greek properties."</div>
             <div className="review-author">
               <span className="review-flag">🇮🇪</span>
               <span className="review-name">Happy Subscriber</span>
@@ -105,37 +105,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* Sezione FAQ */}
-      <section className="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div className="faq-list">
-          <FaqItem
-            question="Can foreigners buy property in Greece?"
-            answer="Yes, citizens of most countries can buy property in Greece. The process is straightforward, especially for EU citizens. Non-EU buyers may need additional paperwork, but it is absolutely possible!"
-          />
-          <FaqItem
-            question="What are the main steps to purchase a home in Greece?"
-            answer="The main steps are: finding the right property, signing a preliminary agreement, legal checks, signing the final contract at the notary, and registering the property. We guide you through each step!"
-          />
-          <FaqItem
-            question="Do I need to speak Greek to buy a house?"
-            answer="No, but it helps! Most agents and notaries speak English, and we provide support in both English and Greek to make the process smooth for you."
-          />
-          <FaqItem
-            question="How much are the additional costs and taxes?"
-            answer="In general, you should budget around 8-10% of the purchase price for taxes, notary, legal fees, and agent commission. We provide a detailed breakdown in our guide."
-          />
-        </div>
-      </section>
       {/* Footer */}
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-info-block">
-            <div className="footer-logo">GreekHome</div>
+            <div className="footer-logo"><div className="footer-logo-placeholder"></div></div>
             <div className="footer-contacts">
               <div className="footer-contact"><span>Tel:</span> +30 210 1234567</div>
               <div className="footer-contact"><span>Email:</span> info@greekhome.com</div>
               <div className="footer-contact"><span>P.IVA:</span> GR123456789</div>
+              <a href="/terms" className="footer-link">Terms & Conditions</a>
             </div>
           </div>
           <div className="footer-socials">
@@ -158,21 +137,5 @@ const Home = () => {
     </>
   );
 };
-
-// FAQ Item Component
-function FaqItem({ question, answer }) {
-  const [open, setOpen] = React.useState(false);
-  return (
-    <div className={`faq-item${open ? ' open' : ''}`} onClick={() => setOpen(o => !o)}>
-      <div className="faq-question">
-        <span>{question}</span>
-        <span className={`faq-arrow${open ? ' open' : ''}`}>▼</span>
-      </div>
-      <div className="faq-answer-wrapper">
-        <div className="faq-answer">{answer}</div>
-      </div>
-    </div>
-  );
-}
 
 export default Home; 

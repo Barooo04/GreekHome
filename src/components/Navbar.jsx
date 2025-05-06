@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import {  useLocation, useNavigate } from 'react-router-dom';
+import {  useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -23,9 +23,9 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <p href="/" className={`navbar-logo ${isScrolled ? 'scrolled' : ''}`}>
-          GreekHome
-        </p>
+        <div className={`navbar-logo ${isScrolled ? 'scrolled' : ''}`}>
+          <div className="navbar-logo-placeholder"></div>
+        </div>
 
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <a href="/" className={`navbar-link ${isActive('/') ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`}>
@@ -36,6 +36,9 @@ const Navbar = () => {
           </a>
           <a href="/buying-in-greece" className={`navbar-link ${isActive('/buying-in-greece') ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`}>
             Buying in Greece
+          </a>
+          <a href="/faq" className={`navbar-link ${isActive('/faq') ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`}>
+            FAQ
           </a>
           <a href="/contact-us" className={`navbar-link ${isActive('/contact-us') ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`}>
             Contact Us

@@ -25,7 +25,7 @@ const AboutUs = () => {
           <div className="about-us-text">
             <h2>Our Story</h2>
             <p>
-              Founded in 2020, GreekHome was born from a passion for Greece and the desire to help people realize their dream of living in this wonderful country. Our team, composed of local and international experts, combines deep knowledge of the Greek real estate market with a personalized approach attentive to each client's needs.
+              Founded in 2020, My Cheap Greek Home was born from a passion for Greece and the desire to help people realize their dream of living in this wonderful country. Our team, composed of local and international experts, combines deep knowledge of the Greek real estate market with a personalized approach attentive to each client's needs.
             </p>
             <p>
               We stand out for our transparency, professionalism, and dedication in guiding our clients through every phase of the purchase process, from finding the ideal property to the final signature.
@@ -76,11 +76,12 @@ const AboutUs = () => {
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-info-block">
-            <div className="footer-logo">GreekHome</div>
+            <div className="footer-logo"><div className="footer-logo-placeholder"></div></div>
             <div className="footer-contacts">
               <div className="footer-contact"><span>Tel:</span> +30 210 1234567</div>
               <div className="footer-contact"><span>Email:</span> info@greekhome.com</div>
               <div className="footer-contact"><span>P.IVA:</span> GR123456789</div>
+              <a href="/terms" className="footer-link">Terms & Conditions</a>
             </div>
           </div>
           <div className="footer-socials">
