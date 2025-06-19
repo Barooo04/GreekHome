@@ -1,5 +1,6 @@
 import React from 'react';
 import './TermsAndConditions.css';
+import logo from '../images/logo.png';
 
 const TermsAndConditions = () => (
   <div className="terms-page">
@@ -56,7 +57,9 @@ const TermsAndConditions = () => (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-info-block">
-          <div className="footer-logo"><div className="footer-logo-placeholder"></div></div>
+          <div className="footer-logo">
+            <img src={logo} alt="GreekHome Logo" className="footer-logo-image" />
+          </div>
           <div className="footer-contacts">
             <div className="footer-contact"><span>Tel:</span> +30 210 1234567</div>
             <div className="footer-contact"><span>Email:</span> info@greekhome.com</div>

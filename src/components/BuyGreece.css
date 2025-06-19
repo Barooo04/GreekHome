@@ -68,25 +68,34 @@
 .process-steps {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 25px;
 }
 
 .process-step {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.process-step:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
 }
 
 .step-number {
   background: #2c3e50;
   color: white;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   flex-shrink: 0;
 }
@@ -96,23 +105,55 @@
 }
 
 .step-content h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #2c3e50;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .step-content p {
   color: #666;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
 }
 
-.step-image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+.step-content ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.step-content li {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.step-content strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.costs-summary {
+  margin-top: 40px;
+  padding: 25px;
+  background: #e8f4fd;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #2c3e50;
+}
+
+.costs-summary h3 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.costs-summary p {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 .info-grid {
@@ -201,7 +242,7 @@
 
 .cta-image {
   flex: 1;
-  min-height: 400px;
+  max-width: 400px;
 }
 
 .cta-image img {
@@ -213,10 +254,12 @@
 @media (max-width: 768px) {
   .process-step {
     flex-direction: column;
+    gap: 15px;
+    text-align: center;
   }
 
   .step-number {
-    margin-bottom: 20px;
+    align-self: center;
   }
 
   .cta-section {
@@ -224,10 +267,24 @@
   }
 
   .cta-image {
-    min-height: 300px;
+    max-width: 100%;
+    height: 200px;
   }
 
   .buy-greece-content h1 {
     font-size: 2.5rem;
+  }
+
+  .process-section h2 {
+    font-size: 2rem;
+  }
+
+  .step-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .step-content p,
+  .step-content li {
+    font-size: 0.9rem;
   }
 } 

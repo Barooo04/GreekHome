@@ -1,5 +1,6 @@
 import React from 'react';
 import './BuyGreece.css';
+import logo from '../images/logo.png';
 
 const BuyGreece = () => {
   return (
@@ -14,46 +15,94 @@ const BuyGreece = () => {
 
       <section className="buy-greece-main">
         <div className="process-section">
-          <h2>The Buying Process</h2>
+          <h2>How to Buy Property in Greece (Step by Step)</h2>
           <div className="process-steps">
             <div className="process-step">
               <div className="step-number">1</div>
               <div className="step-content">
-                <h3>Initial Consultation</h3>
-                <p>We begin with a detailed discussion about your requirements, budget, and preferences. This helps us understand your vision and guide you towards the perfect property.</p>
-                <img 
-                  src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Initial Consultation" 
-                  className="step-image"
-                />
+                <h3>Check Your Eligibility</h3>
+                <p><strong>EU citizens:</strong> Can buy property freely.</p>
+                <p><strong>Non-EU citizens:</strong> Can buy, but may need special permission for border or island areas (especially near Turkey or military zones). Not usually an issue in most tourist-friendly regions.</p>
               </div>
             </div>
 
             <div className="process-step">
               <div className="step-number">2</div>
               <div className="step-content">
-                <h3>Property Selection</h3>
-                <p>Our team carefully curates a selection of properties that match your criteria. We personally visit each property to ensure it meets our high standards.</p>
-                <img 
-                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" 
-                  alt="Property Selection" 
-                  className="step-image"
-                />
+                <h3>Get a Greek Tax Number (AFM)</h3>
+                <p>Essential for any financial/legal transaction in Greece.</p>
+                <p>Can be arranged by your lawyer or accountant with your passport and basic ID.</p>
               </div>
             </div>
 
             <div className="process-step">
               <div className="step-number">3</div>
               <div className="step-content">
-                <h3>Legal Process</h3>
-                <p>We guide you through all legal aspects, from property checks to contract preparation. Our legal team ensures everything is properly documented and secure.</p>
-                <img 
-                  src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80" 
-                  alt="Legal Process" 
-                  className="step-image"
-                />
+                <h3>Open a Greek Bank Account</h3>
+                <p>Needed for transferring funds and paying taxes.</p>
+                <p>Often requires proof of income, residence, and your AFM.</p>
               </div>
             </div>
+
+            <div className="process-step">
+              <div className="step-number">4</div>
+              <div className="step-content">
+                <h3>Appoint a Local Lawyer</h3>
+                <p>Your lawyer will:</p>
+                <ul>
+                  <li>Do title searches</li>
+                  <li>Confirm ownership and land use</li>
+                  <li>Check for debts or planning issues</li>
+                  <li>Handle contracts</li>
+                </ul>
+                <p><strong>This is essential. Never skip legal help.</strong></p>
+              </div>
+            </div>
+
+            <div className="process-step">
+              <div className="step-number">5</div>
+              <div className="step-content">
+                <h3>Sign a Pre-Contract (Optional but Common)</h3>
+                <p>A basic agreement with a deposit (around 10%).</p>
+                <p>It removes the property from the market and begins the paperwork process.</p>
+              </div>
+            </div>
+
+            <div className="process-step">
+              <div className="step-number">6</div>
+              <div className="step-content">
+                <h3>Final Contract (Symvolaio) & Notary</h3>
+                <p>Signed in front of a public notary (mandatory).</p>
+                <p>Your lawyer and a certified translator (if needed) will assist.</p>
+                <p>Balance of payment is made here.</p>
+              </div>
+            </div>
+
+            <div className="process-step">
+              <div className="step-number">7</div>
+              <div className="step-content">
+                <h3>Pay Purchase Taxes</h3>
+                <ul>
+                  <li><strong>Transfer Tax:</strong> Usually 3.09% of the property's official value.</li>
+                  <li><strong>Notary and legal fees:</strong> Typically 1–2% each.</li>
+                  <li><strong>Agent's fee:</strong> Around 2–2.5%, usually split between buyer and seller.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="process-step">
+              <div className="step-number">8</div>
+              <div className="step-content">
+                <h3>Register the Property</h3>
+                <p>Your lawyer will register your ownership with the Land Registry or Cadastre.</p>
+                <p>This is the final legal step to making the property truly yours.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="costs-summary">
+            <h3>Total Buying Costs Estimate:</h3>
+            <p><strong>Add 7–10% on top of the sale price to cover all fees and taxes.</strong></p>
           </div>
         </div>
 
@@ -111,7 +160,9 @@ const BuyGreece = () => {
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-info-block">
-            <div className="footer-logo"><div className="footer-logo-placeholder"></div></div>
+            <div className="footer-logo">
+              <img src={logo} alt="GreekHome Logo" className="footer-logo-image" />
+            </div>
             <div className="footer-contacts">
               <div className="footer-contact"><span>Tel:</span> +30 210 1234567</div>
               <div className="footer-contact"><span>Email:</span> info@greekhome.com</div>

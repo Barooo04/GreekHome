@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {  useLocation } from 'react-router-dom';
 import './Navbar.css';
+import logo from '../images/logo.png'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className={`navbar-logo ${isScrolled ? 'scrolled' : ''}`}>
-          <div className="navbar-logo-placeholder"></div>
+          <img src={logo} alt="GreekHome Logo" className="navbar-logo-image" />
         </div>
 
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>

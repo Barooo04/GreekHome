@@ -50,6 +50,17 @@
   color: var(--gold);
 }
 
+.navbar-logo-image {
+  height: 80px;
+  width: auto;
+  transition: all 0.3s ease;
+  filter: invert(1) brightness(1.2);
+}
+
+.navbar-logo.scrolled .navbar-logo-image {
+  filter: none;
+}
+
 .navbar-logo-placeholder {
   width: 120px;
   height: 38px;

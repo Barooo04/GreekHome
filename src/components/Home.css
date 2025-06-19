@@ -671,7 +671,6 @@
 }
 
 .footer-logo {
-  font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #284277;
@@ -763,4 +762,10 @@
   background: #bdbdbd;
   border-radius: 8px;
   display: block;
+}
+
+.footer-logo-image {
+  height: 80px;
+  width: auto;
+  transition: all 0.3s ease;
 } 
