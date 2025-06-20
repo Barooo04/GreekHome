@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './FAQ.css';
 import logo from '../images/logo.png';
 
@@ -58,7 +58,7 @@ const FAQ = () => {
             </div>
             <div className="footer-contacts">
               <div className="footer-contact"><span>Tel:</span> +30 210 1234567</div>
-              <div className="footer-contact"><span>Email:</span> info@greekhome.com</div>
+              <div className="footer-contact"><span>Email:</span> hello@mycheapgreekhome.com</div>
               <div className="footer-contact"><span>P.IVA:</span> GR123456789</div>
               <a href="/terms" className="footer-link">Terms & Conditions</a>
             </div>

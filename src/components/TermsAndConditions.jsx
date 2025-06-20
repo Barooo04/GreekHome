@@ -38,7 +38,7 @@ const TermsAndConditions = () => (
             <li>Withdraw your consent at any time</li>
             <li>Object to or restrict processing of your data</li>
           </ul>
-          To exercise your rights, please contact us at <a href="mailto:info@greekhome.com">info@greekhome.com</a>.
+          To exercise your rights, please contact us at <a href="mailto:hello@mycheapgreekhome.com">hello@mycheapgreekhome.com</a>.
         </p>
         <h2>6. Third-Party Links</h2>
         <p>
@@ -50,7 +50,7 @@ const TermsAndConditions = () => (
         </p>
         <h2>8. Contact</h2>
         <p>
-          For any questions regarding these Terms & Conditions or your data, please contact us at <a href="mailto:info@greekhome.com">info@greekhome.com</a>.
+          For any questions regarding these Terms & Conditions or your data, please contact us at <a href="mailto:hello@mycheapgreekhome.com">hello@mycheapgreekhome.com</a>.
         </p>
       </div>
     </div>
@@ -62,7 +62,7 @@ const TermsAndConditions = () => (
           </div>
           <div className="footer-contacts">
             <div className="footer-contact"><span>Tel:</span> +30 210 1234567</div>
-            <div className="footer-contact"><span>Email:</span> info@greekhome.com</div>
+            <div className="footer-contact"><span>Email:</span> hello@mycheapgreekhome.com</div>
             <div className="footer-contact"><span>P.IVA:</span> GR123456789</div>
             <a href="/terms" className="footer-link">Terms & Conditions</a>
           </div>
