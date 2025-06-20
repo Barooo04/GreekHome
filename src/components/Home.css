@@ -120,50 +120,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2.5rem;
-}
-
-.svg-animate {
-  will-change: transform, opacity;
-}
-
-.svg-column {
-  animation: float-column 3.5s ease-in-out infinite alternate;
-}
-
-@keyframes float-column {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-18px); }
-}
-
-.svg-wave {
-  animation: wave-move 4s ease-in-out infinite alternate;
-}
-
-@keyframes wave-move {
-  0% { transform: translateX(0); opacity: 0.8; }
-  100% { transform: translateX(18px); opacity: 1; }
-}
-
-.svg-olive {
-  animation: olive-fade 3.2s ease-in-out infinite alternate;
-}
-
-@keyframes olive-fade {
-  0% { opacity: 0.7; transform: scale(1) rotate(-8deg); }
-  100% { opacity: 1; transform: scale(1.08) rotate(8deg); }
+  min-height: 150px;
 }
 
 @media (max-width: 900px) {
   .about-section {
     flex-direction: column;
     gap: 2rem;
-    padding: 2.5rem 1rem 2rem 1rem;
+    padding: 2.5rem 1.5rem;
     top: -30px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
   }
   .about-svgs {
-    flex-direction: row;
-    gap: 1.5rem;
+    display: none;
+  }
+  .about-text {
+    text-align: center;
+  }
+
+  .buying-section {
+    padding: 2.5rem 1.5rem !important;
   }
 }
 

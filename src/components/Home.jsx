@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import logo from '../images/logo.png';
+import Bubbles from './Bubbles';
 
 const Home = () => {
 
@@ -24,27 +25,7 @@ const Home = () => {
           <a href="/about" className="about-link-button">Learn more about us</a>
         </div>
         <div className="about-svgs">
-          {/* Colonna greca animata */}
-          <div className="svg-animate svg-column">
-            <svg width="60" height="120" viewBox="0 0 60 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="15" y="30" width="30" height="80" rx="8" fill="#ede8e4" stroke="#284277" strokeWidth="3"/>
-              <ellipse cx="30" cy="30" rx="18" ry="10" fill="#ede8e4" stroke="#284277" strokeWidth="3"/>
-              <ellipse cx="30" cy="110" rx="18" ry="7" fill="#ede8e4" stroke="#284277" strokeWidth="3"/>
-            </svg>
-          </div>
-          {/* Onde animate */}
-          <div className="svg-animate svg-wave">
-            <svg width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 30 Q 20 10, 40 30 T 80 30" stroke="#81c8ee" strokeWidth="4" fill="none"/>
-            </svg>
-          </div>
-          {/* Foglia di ulivo animata */}
-          <div className="svg-animate svg-olive">
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 50 Q 30 10, 50 50" stroke="#c1afa8" strokeWidth="4" fill="none"/>
-              <circle cx="30" cy="30" r="5" fill="#c1afa8"/>
-            </svg>
-          </div>
+          <Bubbles />
         </div>
       </section>
       {/* Sezione Buying in Greece preview */}
