@@ -4,14 +4,14 @@
 }
 
 .faq-hero {
-  position: relative;
-  height: 300px;
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  height: 70vh;
+  min-height: 340px;
+  background-color: var(--blue-light);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: var(--blue-dark);
   margin-bottom: 4rem;
 }
 
@@ -21,7 +21,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(40, 66, 119, 0.7);
 }
 
 .faq-content {

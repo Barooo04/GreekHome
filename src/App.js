@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import AboutUs from './components/AboutUs';
 import BuyGreece from './components/BuyGreece';
 import ContactUs from './components/ContactUs';
 import Login from './components/Login';
@@ -20,7 +19,6 @@ function AppContent() {
       {showNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
         <Route path="/buying-in-greece" element={<BuyGreece />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/login" element={<Login />} />

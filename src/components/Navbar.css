@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-:root {
-  --blue-dark: #284277;
-  --blue: #006bbd;
-  --blue-light: #81c8ee;
-  --offwhite: #ede8e4;
-  --beige: #c1afa8;
-  --gold: #D4AF37;
-}
-
 .navbar {
   position: fixed;
   top: 0;
@@ -54,7 +45,6 @@
   height: 160px;
   width: auto;
   transition: all 0.3s ease;
-  filter: invert(1) brightness(1.2);
 }
 
 .navbar-logo.scrolled .navbar-logo-image {
@@ -77,7 +67,7 @@
 }
 
 .navbar-link {
-  color: white;
+  color: var(--blue-dark);
   text-decoration: none;
   font-weight: 500;
   font-size: 1.1rem;
@@ -103,7 +93,7 @@
 }
 
 .navbar-link.active {
-  color: var(--gold);
+  color: white;
   font-weight: 600;
 }
 
@@ -122,7 +112,7 @@
 .login-button {
   padding: 0.8rem 1.5rem;
   background: transparent;
-  color: white;
+  color: var(--blue-dark);
   border: 2px solid var(--gold);
   border-radius: 30px;
   font-weight: 500;
@@ -162,7 +152,7 @@
   display: block;
   width: 25px;
   height: 2px;
-  background: white;
+  background: var(--blue-dark);
   transition: all 0.3s ease;
 }
 

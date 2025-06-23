@@ -32,9 +32,6 @@ const Navbar = () => {
           <a href="/" className={`navbar-link ${isActive('/') ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`}>
             Home
           </a>
-          <a href="/about" className={`navbar-link ${isActive('/about') ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`}>
-            About Us
-          </a>
           <a href="/buying-in-greece" className={`navbar-link ${isActive('/buying-in-greece') ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`}>
             Buying in Greece
           </a>

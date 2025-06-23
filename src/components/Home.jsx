@@ -12,17 +12,41 @@ const Home = () => {
         <div className="hero-content">
           <h1>Your Dream Home in Greece</h1>
           <p>Discover the best handpicked properties for you</p>
-          <button className="cta-button">Read More</button>
+          <button className="cta-button" onClick={() => window.location.href = '/buying-in-greece'}>Read More</button>
         </div>
       </div>
       {/* Sezione descrittiva */}
       <section className="about-section">
         <div className="about-text">
-          <h2>Find Your Slice of Greek Paradise</h2>
+          <h2>Your Dream Home in Greece. Handpicked by Me, Just for You.</h2>
+          <h3>DREAM IN GREEK (Ouzo optional, but encouraged)</h3>
           <p>
-            At My Cheap Greek Home, we are passionate about helping you realize your dream of living in Greece. With years of experience and a deep love for the country, our team personally selects the most authentic and valuable properties, guiding you step by step with transparency and care. Discover who we are and why so many people trust us to start their new life in Greece.
+            Tired of doomscrolling when you could be daydreaming about whitewashed villages and sun-drenched terraces?
+            <br />
+            Sign up for my Weekly Property & Lifestyle Newsletter — landing in your inbox every Friday like a fresh breeze off the Aegean.
           </p>
-          <a href="/about" className="about-link-button">Learn more about us</a>
+          <h4>What you'll get:</h4>
+          <ul>
+            <li>4 handpicked gems under €100k</li>
+            <li>Real photos (not the 'creative angle' kind)</li>
+            <li>Prices in actual Euros</li>
+            <li>Direct contact info for the agent (no middlemen or mystery)</li>
+            <li>Tips, advice, and a little local know-how</li>
+            <li>Plus – a traditional Greek recipe to stir your soul (and your appetite)</li>
+          </ul>
+          <p>
+            My Instagram? Just the tip of the feta.
+            <br />
+            This newsletter is the full mezze platter.
+          </p>
+          <p>
+            So let me be your eyes, ears, and very unofficial tour guide in Greece.
+            <br />
+            It's your weekly mini escape to the Mediterranean — no passport required.
+          </p>
+          <p>
+            You're going to LOVE it. Cross my heart and smash a plate.
+          </p>
         </div>
         <div className="about-svgs">
           <Bubbles />
@@ -95,7 +119,6 @@ const Home = () => {
               <img src={logo} alt="GreekHome Logo" className="footer-logo-image" />
             </div>
             <div className="footer-contacts">
-              <div className="footer-contact"><span>Tel:</span> +30 210 1234567</div>
               <div className="footer-contact"><span>Email:</span> hello@mycheapgreekhome.com</div>
               <div className="footer-contact"><span>P.IVA:</span> GR123456789</div>
               <a href="/terms" className="footer-link">Terms & Conditions</a>
