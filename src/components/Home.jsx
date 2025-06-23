@@ -20,8 +20,7 @@ const Home = () => {
       {/* Sezione descrittiva */}
       <section className="about-section">
         <div className="about-text">
-          <h2>Your Dream Home in Greece. Handpicked by Me, Just for You.</h2>
-          <h3>DREAM IN GREEK (Ouzo optional, but encouraged)</h3>
+          <h2>DREAM IN GREEK (Ouzo optional, but encouraged)</h2>
           <p>
             Tired of doomscrolling when you could be daydreaming about whitewashed villages and sun-drenched terraces?
             <br />
