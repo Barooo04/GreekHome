@@ -10,9 +10,11 @@ const Home = () => {
       <div className="hero-section">
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1>Your Dream Home in Greece</h1>
-          <p>Discover the best handpicked properties for you</p>
-          <button className="cta-button" onClick={() => window.location.href = '/buying-in-greece'}>Read More</button>
+          <img src={logo} alt="My Cheap Greek Home Logo" className="hero-logo" />
+          <p>
+            <span>Your Dream Home in Greece</span>
+          </p>
+          <p>Handpicked by Me, Just for You.</p>
         </div>
       </div>
       {/* Sezione descrittiva */}

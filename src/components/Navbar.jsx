@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${location.pathname === '/' ? 'on-home' : ''}`}>
       <div className="navbar-container">
         <div className={`navbar-logo ${isScrolled ? 'scrolled' : ''}`}>
           <img src={logo} alt="GreekHome Logo" className="navbar-logo-image" />
